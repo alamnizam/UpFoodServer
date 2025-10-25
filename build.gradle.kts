@@ -20,6 +20,8 @@ dependencies {
     implementation(libs.ktor.server.content.negotiation)
     implementation(libs.ktor.server.resources)
 
+    implementation(libs.ktor.server.status.pages)
+
     implementation(libs.postgresql)
     implementation(libs.h2)
     implementation(libs.ktor.server.call.logging)
