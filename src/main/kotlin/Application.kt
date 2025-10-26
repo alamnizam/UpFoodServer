@@ -3,6 +3,7 @@ package com.codeturtle
 import com.codeturtle.plugin.configureResources
 import com.codeturtle.plugin.configureRouting
 import com.codeturtle.plugin.configureSerialization
+import com.codeturtle.plugin.configureStatusPages
 import io.ktor.server.application.*
 
 fun main(args: Array<String>) {
@@ -16,4 +17,5 @@ fun Application.module() {
     configureDatabases()
     configureMonitoring()
     configureRouting()
+    configureStatusPages()
 }
