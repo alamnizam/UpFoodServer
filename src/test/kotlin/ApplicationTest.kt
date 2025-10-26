@@ -75,7 +75,7 @@ class ApplicationTest {
         val thread = Thread {
             try {
                 // This will call both lines in the main function:
-                // Line 1: fun main(args: Array<String>) {
+                // Line 1: fun main(args: Array<String>)
                 // Line 2:     io.ktor.server.netty.EngineMain.main(args)
                 main(args)
                 mainExecuted = true
@@ -292,7 +292,7 @@ class ApplicationTest {
         // by calling it multiple times with different scenarios
 
         val scenarios = listOf(
-            arrayOf<String>(), // Empty args
+            arrayOf(), // Empty args
             arrayOf("-P:ktor.deployment.port=0"), // With port parameter
             arrayOf("-P:ktor.development=true") // With development parameter
         )
@@ -431,7 +431,7 @@ class ApplicationTest {
 
         // Test 2: Call with different scenarios to hit different bytecode paths
         val testArgs = listOf(
-            arrayOf<String>(),
+            arrayOf(),
             arrayOf(""),
             arrayOf("--invalid-arg")
         )
